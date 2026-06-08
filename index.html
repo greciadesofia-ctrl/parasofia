@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para mi Sofía, de Grecia</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            background: linear-gradient(135deg, #e0f7fa 0%, #f3e5f5 100%);
+            color: #37474f;
+            padding: 0;
+            margin: 0;
+            background-attachment: fixed;
+        }
+        header {
+            background-color: #ffffff;
+            padding: 40px 20px;
+            border-radius: 0 0 30px 30px;
+            box-shadow: 0 4px 15px rgba(106, 27, 154, 0.15);
+            max-width: 800px;
+            margin: 0 auto 40px auto;
+            border-bottom: 4px solid #ab47bc;
+        }
+        h1 {
+            color: #6a1b9a;
+            font-size: 2.6em;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+        }
+        .intro {
+            font-size: 1.2em;
+            line-height: 1.6;
+            font-style: italic;
+            margin: 20px auto;
+            max-width: 650px;
+            color: #4a148c;
+        }
+        .contador {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #00838f;
+            background: #e0f7fa;
+            padding: 12px 25px;
+            border-radius: 50px;
+            display: inline-block;
+            margin: 15px 0;
+            border: 2px dashed #4dd0e1;
+        }
+        audio {
+            margin: 20px auto 0 auto;
+            display: block;
+            width: 80%;
+            max-width: 400px;
+        }
+        
+        .grupo-seccion {
+            background-color: #ffffff;
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 30px 20px;
+            border-radius: 20px;
+            box-shadow: 0 6px 20px rgba(106, 27, 154, 0.06);
+            border-left: 6px solid #8e24aa;
+        }
+        .texto-grupo {
+            font-size: 1.25em;
+            color: #4a148c;
+            font-weight: 600;
+            margin-bottom: 25px;
+            padding: 0 10px;
+            line-height: 1.5;
+        }
+        
+        .galeria-cuatro {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 0 10px;
+        }
+        .galeria-cuatro img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+            border: 4px solid #b2ebf2;
+        }
+        .galeria-cuatro img:hover {
+            transform: scale(1.05) rotate(1deg);
+            border-color: #ba68c8;
+        }
+        
+        footer {
+            margin: 60px 0 40px 0;
+            font-size: 1.3em;
+            color: #6a1b9a;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        .firmas {
+            color: #00bcd4;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Para mi Sofía 💜</h1>
+        <p class="intro">
+            Sé que a veces el tiempo, la rutina y el trabajo nos consumen el día, mi amor. Por eso hice este espacio para detener el reloj, escuchar nuestra música y recordar lo hermoso que es tenerte.
+        </p>
+        
+        <!-- Contador de días -->
+        <div class="contador" id="contador-dias">Calculando nuestros días juntos...</div>
+
+        <!-- Canción de fondo en la carpeta musica -->
+        <audio controls autoplay loop>
+            <source src="musica/cancion.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+    </header>
+
+    <!-- GRUPO 1 -->
+    <div class="grupo-seccion">
+        <p class="texto-grupo">✨ "Donde todo comenzó... Desde aquel 18 de enero de 2018 mi vida cambió por completo porque entraste tú."</p>
+        <div class="galeria-cuatro">
+            <img src="fotos/FOTO1.jpg" alt="Momento 1">
+            <img src="fotos/FOTO2.jpg" alt="Momento 2">
+            <img src="fotos/FOTO3.jpg" alt="Momento 3">
+            <img src="fotos/FOTO4.jpg" alt="Momento 4">
+        </div>
+    </div>
+
+    <!-- GRUPO 2 -->
+    <div class="grupo-seccion">
+        <p class="texto-grupo">🌱 "En medio de la rutina y las largas jornadas de trabajo, tú sigues siendo mi lugar seguro, mi paz y mi descanso."</p>
+        <div class="galeria-cuatro">
+            <img src="fotos/FOTO5.jpg" alt="Momento 5">
+            <img src="fotos/FOTO6.jpg" alt="Momento 6">
+            <img src="fotos/FOTO7.jpg" alt="Momento 7">
+            <img src="fotos/FOTO8.jpg" alt="Momento 8">
+        </div>
+    </div>
+
+    <!-- GRUPO 3 -->
+    <div class="grupo-seccion">
+        <!-- FRASE CORREGIDA AQUÍ CON "TE AMO" -->
+        <p class="texto-grupo">🎶 "Por los años que me quedan por vivir, prometo firmemente demostrarte cada día cuánto te amo."</p>
+        <div class="galeria-cuatro">
+            <img src="fotos/FOTO9.jpg" alt="Momento 9">
+            <img src="fotos/FOTO10.jpg" alt="Momento 10">
+            <img src="fotos/FOTO11.jpg" alt="Momento 11">
+            <img src="fotos/FOTO12.jpg" alt="Momento 12">
+        </div>
+    </div>
+
+    <!-- GRUPO 4 -->
+    <div class="grupo-seccion">
+        <p class="texto-grupo">💫 "Cada risa, cada cena cansadas, cada pequeño instante a tu lado construye este amor maduro y real que tanto cuido."</p>
+        <div class="galeria-cuatro">
+            <img src="fotos/FOTO13.jpg" alt="Momento 13">
+            <img src="fotos/FOTO14.jpg" alt="Momento 14">
+            <img src="fotos/FOTO15.jpg" alt="Momento 15">
+            <img src="fotos/FOTO16.jpg" alt="Momento 16">
+        </div>
+    </div>
+
+    <!-- GRUPO 5 -->
+    <div class="grupo-seccion">
+        <p class="texto-grupo">🌹 "Gracias por no rendirte, por caminar conmigo y por hacerme la mujer más feliz del mundo. Esto es solo una parte de nuestra historia."</p>
+        <div class="galeria-cuatro">
+            <img src="fotos/FOTO17.jpg" alt="Momento 17">
+            <img src="fotos/FOTO18.jpeg" alt="Momento 18">
+            <img src="fotos/FOTO19.jpg" alt="Momento 19">
+            <img src="fotos/FOTO20.jpg" alt="Momento 20">
+        </div>
+    </div>
+
+    <footer>
+        Te amo hoy, mañana y siempre. — Con todo mi amor, <span class="firmas">Grecia 🩵💜</span>
+    </footer>
+
+    <script>
+        function calcularDias() {
+            const fechaInicio = new Date('2018-01-18T00:00:00');
+            const fechaActual = new Date();
+            const diferenciaTiempo = fechaActual - fechaInicio;
+            const diferenciaDias = Math.floor(diferenciaTiempo / (1000 * 60 * 60 * 24));
+            document.getElementById('contador-dias').innerText = `✨ Juntas desde hace ${diferenciaDias} días ✨`;
+        }
+        calcularDias();
+    </script>
+
+</body>
+</html>
